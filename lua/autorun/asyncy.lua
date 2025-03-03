@@ -20,7 +20,8 @@ local function includeLua(path)
   return include(path)
 end
 
---
 includeLua("asyncy/modules/net.lua")
+-- includeLua("asyncy/modules/http.lua")
+
 -- #uncomment it to include tests
 -- includeLua("asyncy/test.lua")
