@@ -1,7 +1,7 @@
 if (SERVER) then
   util.AddNetworkString("justexample")
 
-  asyncy:createRuntime(function()
+  asyncy.createRuntime(function()
     net.StartAsync("justexample", function() end, Player(3))
     print("client responded me")
   end)

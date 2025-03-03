@@ -12,10 +12,10 @@ git clone https://github.com/autumngmod/asyncy
 ```
 
 # Usage
-To use asynchronous, you must wrap a function that will use asynchronous functions in ``asyncy:createRuntime``.
+To use asynchronous, you must wrap a function that will use asynchronous functions in ``asyncy.createRuntime``.
 ```lua
 concommand.Add("testmsg", function()
-  asyncy:createRuntime(function()
+  asyncy.createRuntime(function()
     -- here you can do anything you want using asynchronous functions
   end)
 end)
@@ -43,7 +43,7 @@ end)
 ### Clientside
 ```lua
 concommand.Add("send", function()
-  asyncy:createRuntime(function()
+  asyncy.createRuntime(function()
     print("sending net message")
 
     net.StartAsync("justexample", function()

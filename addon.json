@@ -1,0 +1,9 @@
+{
+  "$schema": "https://raw.githubusercontent.com/autumngmod/json/refs/heads/main/addon.scheme.json",
+  "name": "asyncy",
+  "description": "Little library for asynchronous operations",
+  "authors": ["smokingplaya"],
+  "version": "0.1.0",
+  "githubRepo": "https://github.com/autumngmod/asyncy",
+  "side": ["server", "client"]
+}

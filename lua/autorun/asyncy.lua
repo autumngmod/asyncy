@@ -1,13 +1,15 @@
 asyncy = {}
 
 ---@return thread
-function asyncy:createRuntime(callback)
+function asyncy.createRuntime(callback)
   local thread = coroutine.create(callback)
 
   coroutine.resume(thread)
 
   return thread
 end
+
+async = asyncy.createRuntime
 
 --- its literally includeCS
 ---
